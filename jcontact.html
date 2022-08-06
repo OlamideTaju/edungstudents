@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import "jamb.css"
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<header></header>
+<body id="contact">
+  <form  action="https://formsubmit.co/180048d3bbf573a9fb88f4f48eb29f38" method="post">
+  <table id="contact_table">
+    <tr>
+      <td><h1>Get In Touch With Us</h1></td>
+    </tr>
+    <tr>
+      <td>Name: <input class="data" type="text" placeholder="Full name" name="name" required> <br><br></td>
+    </tr>
+      </tr>
+      <td>Phone Num: <input class="data" placeholder="Phone Number" type="number" name="number" required><br><br></td>
+    </tr>
+    <tr>
+      <td> Email: <input class="data" placeholder="example@gmail.com" type="email" name="email" required><br><br></td>
+    </tr>
+    <tr>
+      <td>Body: <input type="text" name="body" placeholder="Write your message..." class="body" required><br><br></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+  </table>
+  <input type="submit" value="submit" class="submit" name="submit">
+  </form>
+<footer>
+  
+</footer>
+
+
+<script>
+function sendContact(){
+Email.send({
+    Host : "smtp.elasticemail.com",
+    Port:2525,
+    Username : "olamidetajudeen764@gmail.com",
+    Password : "7DAD628DDE7E00EE5B965E4953853D4827C6",
+    To : 'olatajudeen764@gmail.com',
+    From : document.getElementById("email").value,
+    Subject: "New Contact Enquiry",
+    Body : `Name: ${document.getElementById("name").value} Email Address:${document.getElementById("email").value} Phone Number: ${document.getElementById("number").value}
+    Message: ${document.getElementById("body").value}`
+    
+}).then(
+  message => alert(message)
+);
+}
+</script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+</body>
+
+</html>
