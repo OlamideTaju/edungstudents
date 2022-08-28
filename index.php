@@ -1,4 +1,4 @@
 <?php
-include_once("jcontact.html");
+include_once("jamb.html");
 
 ?>
