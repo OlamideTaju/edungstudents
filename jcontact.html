@@ -8,8 +8,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
 </head>
-<header></header>
 <body id="contact">
+<header id="header" class="nav-bar">
+  <!--<div style="background-color: hotpink; width: 200px; height:50px"><h1> <marquee style="position: relative;" behavior="" direction="right"> EduNgStudents</marquee></h1></div>-->
+  <img src="images.png" id="imgmenu" class="menu" alt="menu">
+  <nav id="nav-container" class="nav-container" >
+   <img id="immenu" class="second-menu" src="close.png" alt="close"> <br><br>
+    <table class="nav-table">
+      <tr>
+        <td><a href="jamb.html">Home</a></td>
+      </tr>
+    <tr>
+      <td><a href="about.html">About</a></td>
+    </tr>
+    <tr><td>
+    <a href="privacy.html">Privacy Policy</a></td>
+    </tr>
+    <tr>
+      <td> <a href="terms.html">Terms And Conditions</a></td>
+    </tr>
+    <tr>
+      <td><a href="jcontact.html">Contact Us</a></td>
+    </tr>
+  </table>
+    </nav>
+</header><br><br><br>
   <form  action="https://formsubmit.co/180048d3bbf573a9fb88f4f48eb29f38" method="post">
   <table id="contact_table">
     <tr>
@@ -28,17 +51,14 @@
       <td>Body: <input type="text" name="body" placeholder="Write your message..." class="body" required><br><br></td>
     </tr>
     <tr>
-      <td> <input type="submit" value="submit" class="submit" name="submit">
-</td>
+      <td><input type="submit" value="Submit" class="submit" name="submit"></td>
     </tr>
   </table>
-   </form>
+  </form>
 <footer>
-  
 </footer>
-
-
-<!--<script>
+<!--
+<script>
 function sendContact(){
 Email.send({
     Host : "smtp.elasticemail.com",
@@ -58,6 +78,7 @@ Email.send({
 </script>
 <script src="https://smtpjs.com/v3/smtp.js">
 </script>-->
+<script src="jamb.js"></script>
 </body>
 
 </html>
