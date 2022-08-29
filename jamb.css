@@ -198,7 +198,7 @@ img{
 /* Contact css*/
 
 body#contact{
-  background-color:lightgrey;
+  background-color:lightgrey !important;
 }
 table#contact_table{
   position: static;
