@@ -7,7 +7,7 @@ a{
   text-decoration-line: none;
 }
 a:visited{
-  color:black;
+  color:blue;
 }
 input{
   outline: none;
@@ -198,7 +198,7 @@ img{
 /* Contact css*/
 
 body#contact{
-  background-color: deeppink;
+  background-color:lightgrey;
 }
 table#contact_table{
   position: static;
@@ -227,9 +227,10 @@ table#contact_table{
  position: relative;
  left:50px;
  height:40px;
- color:gray;
+ color:black;
  border:none;
  margin-left:50px;
+ background:hotpink;
 }
 
 .data:hover{
