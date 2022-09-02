@@ -28,14 +28,15 @@ h1{
 .jambbtn{
   border:none;
   outline:none;
-  background:pink;
+  background:deeppink;
+  color:white;
 border-radius: 30px;
 font-size:35px;
 animation-name: startbtn;
 animation-duration: 1s;
 animation-iteration-count: infinite;
 }
-@keyframes startbtn{
+/*@keyframes startbtn{
   from{
     
   }
@@ -44,7 +45,7 @@ animation-iteration-count: infinite;
     color:white;
     font-size: 30px;
   }
-}
+}*/
 button.jamb{
   background-color: lightgrey;
 }
@@ -93,6 +94,14 @@ p{
   margin: 10px;
   box-shadow: .2px .2px 2px 2px deeppink;
 }
+flex>div:scroll{
+  height: 250px;
+  width: 270px;
+  background-color:green;
+  padding:10px;
+  margin: 10px;
+  box-shadow: .2px .2px 2px 2px deeppink;
+}
 
 /*** Nav-Menu **/
 
@@ -132,7 +141,7 @@ border-radius:10px;
 width:100%;
 height:31.8em;
   color:white;
-  background-color: hotpink;
+  background-image:linear-gradient(yellowgreen 20%, red);
  top:0;
  right:0;
   position:absolute;
@@ -158,11 +167,14 @@ body.keys, html{
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
 }
-div#main>a>input[value]:hover{
+#main>a>input[value]:hover{
   background-color: deeppink;
   color:white;
   border:none;
+  align-self: center;
 }
 .main{
   background-color:pink;
@@ -278,7 +290,7 @@ padding-bottom: 1px;
   text-shadow: 3px 2px 2px deeppink;
 }
 
-p#new{
+/*p#new{
   animation:myjs 1s infinite;
 }
 @keyframes myjs{
@@ -288,8 +300,329 @@ p#new{
   to{
 transform: translate(40px)
   }
-}
+}*/
 
 p#new{
   color:green;
+}
+
+/**** At Media Desktop ***/
+@media screen and (min-width: 980px)/*and (max-width:1024)*/{
+ *{
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+/** Default**/
+a{
+  text-decoration-line: none;
+}
+a:visited{
+  color:blue;
+}
+input{
+  outline: none;
+}
+/************* jamb.html page style
+**************/
+body#main{
+  background-image: linear-gradient
+  (purple, 30%, pink 30%, violet);
+  margin:0;
+}
+
+h1{
+  text-align: center;
+  font-size: 2.3m;
+  font-weight:bold;
+}
+.jambbtn{
+  border:none;
+  outline:none;
+  background:deeppink;
+  color:white;
+border-radius: 30px;
+font-size:35px;
+animation-name: startbtn;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+}
+/*@keyframes startbtn{
+  from{
+    
+  }
+  to{
+    background-color: deeppink;
+    color:white;
+    font-size: 30px;
+  }
+}*/
+button.jamb{
+  background-color: lightgrey;
+}
+.contain{
+  position: fixed;
+  display: inline-block;
+  background-color:red;
+}
+.mycontent{
+  position:absolute;
+background-color: darkslateblue;
+  overflow-y:hidden;
+  width: 200px;
+ height:0px;
+  transition-property: height;
+  transition-duration: 2s;
+  text-align: center;
+}
+
+p{ font-size:1.5em;
+  text-align:justify;
+}
+.tmain{
+  display: inline-block;
+  bottom:0;
+  max-width:100%;
+  height: auto;
+  background-color:deeppink;
+  text-align: center;
+  color:black;
+  font-size: 10px;
+}
+
+.flex{
+  display:flex;
+  flex-flow:column;
+  justify-content:center;
+  align-items:center;
+  background-image: linear-gradient(pink, 30%, hotpink 50%);
+}
+.flex>div{
+  height: 300px;
+  width: 500px;
+  background-color:pink;
+  padding:10px;
+  margin: 10px;
+  box-shadow: .2px .2px 2px 2px deeppink;
+}
+flex>div:scroll{
+  height: 300px;
+  width: 300px;
+  background-color:green;
+  padding:10px;
+  margin: 10px;
+  box-shadow: .2px .2px 2px 2px deeppink;
+}
+
+/*** Nav-Menu **/
+
+.nav-bar{
+  display:flex;
+  position:fixed;
+  background-color: hotpink;
+margin:0;
+padding: 0;
+box-sizing: border-box;
+width:100%;
+}
+.nav-bar + h1{
+  text-align: center;
+}
+.menu{
+  width: 40px;
+  height:40px;
+  position: absolute;
+  filter: opacity(60%);
+padding:0px;
+right:10px;
+top:10px;
+border-radius:10px;
+}
+.second-menu{
+  width: 45px;
+  height:45px;
+  padding: 0px;
+  filter: opacity(80%);
+  font-size: bold;
+  position: absolute;
+  top:0.8em;
+  left:10px;
+}
+
+.nav-container{
+width:100%;
+height:100em;
+  color:white;
+  background-image:linear-gradient(yellowgreen 20%, red);
+ top:0;
+ right:0;
+  position:absolute;
+  display:none;
+}
+
+.nav-table{
+  line-height:1.3em;
+  text-align: justify;
+top: 100px;
+padding: 0;
+position: absolute;
+font-size: 2em;
+}
+
+table.nav-table>a:hover{
+  background-color: lime;
+}
+
+
+/** main.html page **/
+
+body.keys, html{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#main>a>input[value]{
+  font-size: 50px;
+}
+#main>a>input[value]:hover{
+  background-color: deeppink;
+  color:white;
+  border:none;
+}
+.main{
+  align-items:center;
+  background-color:pink;
+  border: 1px solid deeppink;
+  width:15em;
+  height:140px;
+  font-size: 15px;
+  color:black;
+  text-shadow: 2px 3px 2px chocolate;
+  box-shadow: .2px 
+  .2px 3px 3px white;
+   /* animation: input_animate 1s infinite;*/
+}
+/*
+@keyframes input_animate{
+  from{
+    
+  }
+  to{
+transform: translate(2px)
+  }
+}*/
+
+div#main{
+  display:flex;
+  flex-flow:column wrap;
+  align-items: center;
+  background-color: hotpink;
+  height: 100em;
+}
+img{
+  width:230px;
+  height:100px;
+}
+
+/* Contact css*/
+
+body#contact{
+  background-color:lightgrey !important;
+}
+table#contact_table{
+  position: static;
+  color:white;
+  background-image: linear-gradient(to bottom left,grey 10%,hotpink 40%, deeppink 50%);
+ margin:0 auto;
+  top:50px;
+  border-top-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   box-shadow: .5px .3px 5px 3px white;}
+
+.data{
+  height:25px;
+  width:230px;
+  color: black;
+  margin:0 auto;
+  border: 1px solid deeppink;
+}
+.body{
+  width:230px;
+  height:50px;
+  border:1px solid deeppink;
+}
+.submit{
+  width:100px;
+ position: relative;
+ left:50px;
+ height:40px;
+ color:black;
+ border:none;
+ margin-left:50px;
+ background:hotpink;
+}
+
+.data:hover{
+  height:25px;
+  width:230px;
+  background-color: deeppink;
+  color: white;
+}
+.body:hover{
+  background-color: deeppink;
+  color:white;
+  
+}
+.submit:hover{
+  width:100px;
+  height:40px;
+ position: relative;
+ background-color: deeppink;
+ color: white;
+}
+
+
+/*** About.html ***/
+
+div#about{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: center;
+}
+div.myabout{
+padding-left:132px;
+padding-right:132px;
+padding-bottom: 1px;
+  position:fixed;
+  top:5px;
+  background-color: lavenderblush;
+  box-shadow: .2px .3px 2px 3px hotpink;
+  background-image: linear-gradient(deeppink,50%,hotpink);
+  font-size: 17px;
+  background-clip:text;
+  -webkit-background-clip: text;
+}
+.developer{
+  color: black;
+  text-shadow: 3px 2px 2px deeppink;
+}
+
+p#new{
+  animation:myjs 1s infinite;
+}
+/*@keyframes myjs{
+  {}from{
+    
+  }
+  to{
+transform: translate(40px)
+  }
+}*/
+
+p#new{
+  color:green;
+}
+
 }
