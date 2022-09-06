@@ -1,4 +1,4 @@
 <?php
-include_once("jamb.html");
+include_once("index.html");
 
 ?>
